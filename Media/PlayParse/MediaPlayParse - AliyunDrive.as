@@ -1,5 +1,5 @@
 ﻿/*
-	YouTube media parse
+	Aliyun drive media parse
 */	
 
 // void OnInitialize()
@@ -57,6 +57,17 @@ string PlayitemParse(const string &in path, dictionary &MetaData, array<dictiona
 
 	HostSetUrlHeaderHTTP(path, header);
 
-	HostPrintUTF8(path);
+	int index = path.findFirst("filename");
+	array<string> substrs = path.substr(index).split("&");
+
+	if (substrs.length() == 0) {
+		return path;
+	}
+
+	string filename = HostUrlDecode(HostUrlDecode(substrs[0]).substr(17));
+
+	MetaData['title'] = filename;
+	HostPrintUTF8(filename);
+
 	return path;
 }
