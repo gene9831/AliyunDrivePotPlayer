@@ -22,17 +22,17 @@
 
 string GetTitle()
 {
-	return "Aliyun";
+	return "Aliyun drive";
 }
 
 string GetVersion()
 {
-	return "1";
+	return "1.1";
 }
 
 string GetDesc()
 {
-	return "https://www.aliyundrive.com//";
+	return "https://www.aliyundrive.com/";
 }
 
 bool PlayitemCheck(const string &in path) {
@@ -46,15 +46,6 @@ string PlayitemParse(const string &in path, dictionary &MetaData, array<dictiona
 	HostSetUrlUserAgentHTTP(path, userAgent);
 
 	string header = 'Referer: https://www.aliyundrive.com/';
-	header += '\nsec-ch-ua: " Not A;Brand";v="99", "Chromium";v="98", "Microsoft Edge";v="98"';
-	header += '\nsec-ch-ua-mobile: ?0';
-	header += '\nsec-ch-ua-platform: "Windows"';
-	header += '\nSec-Fetch-Dest: document';
-	header += '\nSec-Fetch-Mode: navigate';
-	header += '\nSec-Fetch-Site: cross-site';
-	header += '\nSec-Fetch-User: ?1';
-	header += '\nUpgrade-Insecure-Requests: 1';
-
 	HostSetUrlHeaderHTTP(path, header);
 
 	int index = path.findFirst("filename");
