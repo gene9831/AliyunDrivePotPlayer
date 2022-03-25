@@ -16,6 +16,9 @@ PotPlayer 在线播放阿里云盘视频外链
 
 > 目前只支持域名为 `bj29.cn-beijing.data.alicloudccp.com` 的外链
 
+![PotPlayer](./resources/3.png)
+![打开链接](./resources/4.png)
+
 ## 其他
 
 如果你使用上述脚本遇到了无法使用右键菜单复制外链的问题，有如下几种解决方法：
