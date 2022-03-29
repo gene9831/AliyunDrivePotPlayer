@@ -19,6 +19,15 @@ PotPlayer 在线播放阿里云盘视频外链
 ![PotPlayer](./resources/3.png)
 ![打开链接](./resources/4.png)
 
+## 如何实现
+
+添加如下 http 请求头，使用任意支持添加 http 头的下载工具都可以下载
+
+```http
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36 Edg/99.0.1150.55
+Referer: https://www.aliyundrive.com/
+```
+
 ## 其他
 
 如果你使用上述脚本遇到了无法使用右键菜单复制外链的问题，有如下几种解决方法：
