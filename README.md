@@ -14,10 +14,17 @@ PotPlayer 在线播放阿里云盘视频外链
 
 然后直接使用 PotPlayer 打开链接(`Ctrl + U`)的功能播放外链即可
 
-> 目前只支持域名为 `bj29.cn-beijing.data.alicloudccp.com` 的外链
-
 ![PotPlayer](./resources/3.png)
 ![打开链接](./resources/4.png)
+
+目前只支持链接域名
+
+- `bj29.cn-beijing.data.alicloudccp.com`
+- `cn-beijing-data.aliyundrive.net`
+
+## TODO
+
+- [ ] 研究下 Potplayer 是否允许插件添加自己的配置，便于添加其他域名
 
 ## 如何实现
 
@@ -27,13 +34,3 @@ PotPlayer 在线播放阿里云盘视频外链
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36 Edg/99.0.1150.55
 Referer: https://www.aliyundrive.com/
 ```
-
-## 其他
-
-如果你使用上述脚本遇到了无法使用右键菜单复制外链的问题，有如下几种解决方法：
-
-1. `Microsoft Edge` 浏览器最新版可以使用快捷键 `Ctrl + Shift + X` 开启复制文本功能
-   ![1](resources/1.png)
-
-2. 浏览器使用快捷键 `Ctrl + Shift + C` 打开开发者工具并定位元素
-   ![2](resources/2.png)

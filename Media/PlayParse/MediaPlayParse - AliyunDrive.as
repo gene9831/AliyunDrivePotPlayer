@@ -36,11 +36,13 @@ string GetDesc()
 }
 
 bool PlayitemCheck(const string &in path) {
-	return HostRegExpParse(path, "bj29.cn-beijing.data.alicloudccp.com/(.+)") != "";
+	return HostRegExpParse(path, "bj29.cn-beijing.data.alicloudccp.com/(.+)") != ""
+		or HostRegExpParse(path, "cn-beijing-data.aliyundrive.net/(.+)") != "";
 }
 
 string PlayitemParse(const string &in path, dictionary &MetaData, array<dictionary> &QualityList) {
 	// HostOpenConsole();
+	HostPrintUTF8(path);
 
 	string userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.34';
 	HostSetUrlUserAgentHTTP(path, userAgent);
