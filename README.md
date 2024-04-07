@@ -1,6 +1,6 @@
 # AliyunDrive
 
-PotPlayer 在线播放阿里云盘视频外链
+~~PotPlayer 在线播放阿里云盘视频外链(阿里云盘外链已无法使用)~~
 
 ## 前提
 
